@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ | Evo Tour</title>
+    <link rel="icon" href="//bizweb.dktcdn.net/100/372/532/themes/744930/assets/favicon.png?1629430879377"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <!-- Evo-nav -->
+        <div class="evo-nav">
+            <div class="container card-item card-item-menu">
+                <div class="logo">
+                    <a href="../Home_page/index.html">
+                        <img src="../image/logo.webp" alt="">
+                    </a>
+                    <button class="btn-mobile">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <a class="heart" href="">
+                        <i class="far fa-heart"></i>
+                    </a>
+                </div>
+                <div class="search">
+                    <form class="card-item" action="#" method="post">
+                        <input type="text" name="search" id="search"
+                            placeholder="Nhập tên điểm đến hoặc thành phố bạn muốn tới">
+                        <button>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="information">
+                    <div class="favorite">
+                        <a href="#">
+                            <i class="far fa-heart"></i> Yêu thích
+                        </a>
+                        <div class="favorite-box">
+                            <span class="favorites-message">
+                                Những Tour thích(
+                                <span>0</span>
+                                )
+                            </span>
+                            <div class="favorite-content">
+                                <span>
+                                    <img src="../image/valentines-heart.svg" alt="">
+                                </span>
+                                <h3>
+                                    Tour nào của chúng tôi bạn mong muốn sở hữu nhất?
+                                </h3>
+                                <p>
+                                    Hãy thêm vào danh sách Tour yêu thích ngay nhé!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account">
+                        <a href="#">
+                            <i class="far fa-user"></i> Tài khoản
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="../Account/login.html">Đăng nhập </a>
+                            </li>
+                            <li>
+                                <a href="../Account/register.html">Đăng ký</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Evo-menu -->
+        <!-- Menu-desktop -->
+        <div class="evo-menu">
+            <div class="container">
+                <ul class="card-item menu-desktop">
+                    <li class="menu-item">
+                        <a class="menu-link" href="../Home_page/index.html">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="../Introduce/index.html">
+                            Giới thiệu
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="../Tour/index.html">
+                            Tour du lịch
+                            <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor"
+                                class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                            </svg>
+                        </a>
+                        <div class="tour-selection">
+                            <ul class="tour-selectionlive1">
+                                <li class="tour-item">
+                                    <a class="selection-link " href="../Tour/tourincountry.html"
+                                        title="Tour trong nước">
+                                        Tour trong nước
+                                    </a>
+                                    <div class="show-tour">
+                                        <div class="tour-selectionlive2">
+                                            <div class="list-tour">
+                                                <ul id="tour-vietnam"></ul>
+                                            </div>
+                                            <div class="photo">
+                                                <a href="#">
+                                                    <img src="../image/tour-image.webp" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tour-item">
+                                    <a class="selection-link" href="../Tour/internationaltour.html"
+                                        title="Tour Quốc tế">
+                                        Tour Quốc tế
+                                    </a>
+                                    <div class="show-tour">
+                                        <div class="tour-selectionlive2">
+                                            <div class="list-tour">
+                                                <ul id="tour-international"></ul>
+                                            </div>
+                                            <div class="photo">
+                                                <a href="#">
+                                                    <img src="../image/mega-2-image.webp" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tour-item">
+                                    <a class="selection-link" href="#" title="Team Building">
+                                        Team Building
+                                    </a>
+                                </li>
+                                <li class="tour-item">
+                                    <a class="selection-link" href="#" title="Tour Free and Easy">
+                                        Tour Free and Easy
+                                    </a>
+                                    <div class="show-tour">
+                                        <div class="tour-selectionlive2">
+                                            <div class="list-tour">
+                                                <ul id="tour-free"></ul>
+                                            </div>
+                                            <div class="photo">
+                                                <a href="#">
+                                                    <img src="../image/tour-image.webp" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="tour-item">
+                                    <a class="selection-link" href="#" title="Điểm đến hàng đầu">
+                                        Điểm đến hàng đầu
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="../Promotional_tour/index.html">
+                            Tour khuyến mãi
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="../News/index.html">
+                            Tin tức
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="../Travel_experience/index.html">
+                            Kinh nghiệm du lịch
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link" href="../FAQ/index.html">
+                            Faq
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-link  active-link" href="../Contact/index.html">
+                            Liên hệ
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Menu-mobile-->
+        <div class="mobile">
+            <!-- header -->
+            <div class="head-mobile">
+                <div>
+                    <a href="../Account/login.html">
+                        Đăng nhập
+                    </a>
+                </div>
+                <div>
+                    <a href="../Account/register.html">
+                        Đăng ký
+                    </a>
+                </div>
+            </div>
+            <!-- menu -->
+            <div class="menu-mobile">
+                <ul>
+                    <li class="mobile-item">
+                        <a href="../Home_page/index.html" title="Trang chủ">Trang chủ</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="../Introduce/index.html" title="Giới thiệu">Giới thiệu</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="../Tour/index.html" title="Tour du lịch">Tour du lịch</a>
+                        <svg class="svg1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                        <ul class="sub-mobilel1">
+                            <li>
+                                <a href="../Tour/tourincountry.html" title="">Tour trong nước</a>
+                                <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <ul class="sub-mobilel2">
+                                    <li>
+                                        <a href="#" title="Miền Bắc">Miền Bắc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Miền Trung">Miền Trung</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Miền Nam">Miền Nam</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../Tour/internationaltour.html" title="">Tour Quốc tế</a>
+                                <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <ul class="sub-mobilel2">
+                                    <li>
+                                        <a href="#" title="Đông Nam Á">Đông Nam Á</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Bắc Á">Bắc Á</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Ấn Độ - Nam Á">Ấn Độ - Nam Á</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Châu Âu">Châu Âu</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Châu Úc">Châu Úc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Châu Phi">Châu Phi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Châu Mỹ">Châu Mỹ</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" title="Team Building">Team Building</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Tour Free and Easy">Tour Free and Easy</a>
+                                <svg class="svg2" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                    viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                                <ul class="sub-mobilel2">
+                                    <li>
+                                        <a href="#" title="Free and Easy Miền Bắc">Free and Easy Miền Bắc</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="Free and Easy Miền Trung">Free and Easy Miền Trung</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" title="ree and Easy Miền Nam">Free and Easy Miền Nam</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" title="Điểm đến hàng đầu">Điểm đến hàng đầu</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="../Promotional_tour/index.html" title="Tour khuyến mãi">Tour khuyến mãi</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="../News/index.html" title="Tin tức">Tin tức</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="../Travel_experience/index.html" title="Kinh nghiệm du lịch">Kinh nghiệm du lịch</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="../FAQ/index.html" title="FAQ">FAQ</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="../Contact/index.html" title="Liên hệ">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- contact-->
+            <div class="mobile-contact">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-telephone" viewBox="0 0 16 16">
+                    <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                </svg>
+                Hotline:
+                <a href="#" title="1900 6750">1900 6750</a>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="contact">
+            <div class="box-contact">
+                <div class="icon-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 512.001 512.001" xml:space="preserve">
+                        <path
+                            d="M498.808,377.784l-63.633-63.647c-16.978-16.978-46.641-17.007-63.647,0l-10.611,10.611l127.284,127.277l10.607-10.607 C516.427,423.798,516.368,395.314,498.808,377.784z">
+                        </path>
+                        <path
+                            d="M339.116,345.37c-13.39,10.373-32.492,9.959-44.727-2.303L168.572,217.163c-12.263-12.263-12.676-31.379-2.303-44.736 L39.278,45.443c-54.631,63.68-52.495,159.633,7.8,219.928l199.103,199.19c57.86,57.858,152.635,65.532,219.932,7.797 L339.116,345.37z">
+                        </path>
+                        <path
+                            d="M197.503,76.391L133.87,12.744c-16.978-16.978-46.641-17.007-63.647,0L59.612,23.355l127.284,127.277l10.607-10.608 C215.121,122.406,215.063,93.922,197.503,76.391z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="icon-chat">
+                    <svg id="svg_icon_main" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="612px" height="612px"
+                        viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+                        <path
+                            d="M401.625,325.125h-191.25c-10.557,0-19.125,8.568-19.125,19.125s8.568,19.125,19.125,19.125h191.25 c10.557,0,19.125-8.568,19.125-19.125S412.182,325.125,401.625,325.125z M439.875,210.375h-267.75 c-10.557,0-19.125,8.568-19.125,19.125s8.568,19.125,19.125,19.125h267.75c10.557,0,19.125-8.568,19.125-19.125 S450.432,210.375,439.875,210.375z M306,0C137.012,0,0,119.875,0,267.75c0,84.514,44.848,159.751,114.75,208.826V612 l134.047-81.339c18.552,3.061,37.638,4.839,57.203,4.839c169.008,0,306-119.875,306-267.75C612,119.875,475.008,0,306,0z M306,497.25c-22.338,0-43.911-2.601-64.643-7.019l-90.041,54.123l1.205-88.701C83.5,414.133,38.25,345.513,38.25,267.75 c0-126.741,119.875-229.5,267.75-229.5c147.875,0,267.75,102.759,267.75,229.5S453.875,497.25,306,497.25z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="icon-zalo">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        viewBox="0 0 614.501 613.667" xml:space="preserve">
+                        <path
+                            d="M464.721,301.399c-13.984-0.014-23.707,11.478-23.944,28.312c-0.251,17.771,9.168,29.208,24.037,29.202 c14.287-0.007,23.799-11.095,24.01-27.995C489.028,313.536,479.127,301.399,464.721,301.399z">
+                        </path>
+                        <path
+                            d="M291.83,301.392c-14.473-0.316-24.578,11.603-24.604,29.024c-0.02,16.959,9.294,28.259,23.496,28.502 c15.072,0.251,24.592-10.87,24.539-28.707C315.214,313.318,305.769,301.696,291.83,301.392z">
+                        </path>
+                        <path
+                            d="M310.518,3.158C143.102,3.158,7.375,138.884,7.375,306.3s135.727,303.142,303.143,303.142 c167.415,0,303.143-135.727,303.143-303.142S477.933,3.158,310.518,3.158z M217.858,391.083 c-33.364,0.818-66.828,1.353-100.133-0.343c-21.326-1.095-27.652-18.647-14.248-36.583c21.55-28.826,43.886-57.065,65.792-85.621 c2.546-3.305,6.214-5.996,7.15-12.705c-16.609,0-32.784,0.04-48.958-0.013c-19.195-0.066-28.278-5.805-28.14-17.652 c0.132-11.768,9.175-17.329,28.397-17.348c25.159-0.026,50.324-0.06,75.476,0.026c9.637,0.033,19.604,0.105,25.304,9.789 c6.22,10.561,0.284,19.512-5.646,27.454c-21.26,28.497-43.015,56.624-64.559,84.902c-2.599,3.41-5.119,6.88-9.453,12.725 c23.424,0,44.123-0.053,64.816,0.026c8.674,0.026,16.662,1.873,19.941,11.267C237.892,379.329,231.368,390.752,217.858,391.083z M350.854,330.211c0,13.417-0.093,26.841,0.039,40.265c0.073,7.599-2.599,13.647-9.512,17.084 c-7.296,3.642-14.71,3.028-20.304-2.968c-3.997-4.281-6.214-3.213-10.488-0.422c-17.955,11.728-39.908,9.96-56.597-3.866 c-29.928-24.789-30.026-74.803-0.211-99.776c16.194-13.562,39.592-15.462,56.709-4.143c3.951,2.619,6.201,4.815,10.396-0.053 c5.39-6.267,13.055-6.761,20.271-3.357c7.454,3.509,9.935,10.165,9.776,18.265C350.67,304.222,350.86,317.217,350.854,330.211z M395.617,369.579c-0.118,12.837-6.398,19.783-17.196,19.908c-10.779,0.132-17.593-6.966-17.646-19.512 c-0.179-43.352-0.185-86.696,0.007-130.041c0.059-12.256,7.302-19.921,17.896-19.222c11.425,0.752,16.992,7.448,16.992,18.833 c0,22.104,0,44.216,0,66.327C395.677,327.105,395.828,348.345,395.617,369.579z M463.981,391.868 c-34.399-0.336-59.037-26.444-58.786-62.289c0.251-35.66,25.304-60.713,60.383-60.396c34.631,0.304,59.374,26.306,58.998,61.986 C524.207,366.492,498.534,392.205,463.981,391.868z">
+                        </path>
+                    </svg>
+                </div>
+            </div>
+            <div class="contact-content">
+                <ul>
+                    <li class="phone">
+                        <a href="#">
+                            <span>
+                                <svg id="svg_phone_icon" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                    viewBox="0 0 512.001 512.001" xml:space="preserve">
+                                    <path
+                                        d="M498.808,377.784l-63.633-63.647c-16.978-16.978-46.641-17.007-63.647,0l-10.611,10.611l127.284,127.277l10.607-10.607 C516.427,423.798,516.368,395.314,498.808,377.784z">
+                                    </path>
+                                    <path
+                                        d="M339.116,345.37c-13.39,10.373-32.492,9.959-44.727-2.303L168.572,217.163c-12.263-12.263-12.676-31.379-2.303-44.736 L39.278,45.443c-54.631,63.68-52.495,159.633,7.8,219.928l199.103,199.19c57.86,57.858,152.635,65.532,219.932,7.797 L339.116,345.37z">
+                                    </path>
+                                    <path
+                                        d="M197.503,76.391L133.87,12.744c-16.978-16.978-46.641-17.007-63.647,0L59.612,23.355l127.284,127.277l10.607-10.608 C215.121,122.406,215.063,93.922,197.503,76.391z">
+                                    </path>
+                                </svg>
+                            </span>19006750
+                        </a>
+                    </li>
+                    <li class="zalo">
+                        <a href="#">
+                            <span>
+                                <svg id="svg_zalo_icon" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                    viewBox="0 0 614.501 613.667" xml:space="preserve">
+                                    <path
+                                        d="M464.721,301.399c-13.984-0.014-23.707,11.478-23.944,28.312c-0.251,17.771,9.168,29.208,24.037,29.202 c14.287-0.007,23.799-11.095,24.01-27.995C489.028,313.536,479.127,301.399,464.721,301.399z">
+                                    </path>
+                                    <path
+                                        d="M291.83,301.392c-14.473-0.316-24.578,11.603-24.604,29.024c-0.02,16.959,9.294,28.259,23.496,28.502 c15.072,0.251,24.592-10.87,24.539-28.707C315.214,313.318,305.769,301.696,291.83,301.392z">
+                                    </path>
+                                    <path
+                                        d="M310.518,3.158C143.102,3.158,7.375,138.884,7.375,306.3s135.727,303.142,303.143,303.142 c167.415,0,303.143-135.727,303.143-303.142S477.933,3.158,310.518,3.158z M217.858,391.083 c-33.364,0.818-66.828,1.353-100.133-0.343c-21.326-1.095-27.652-18.647-14.248-36.583c21.55-28.826,43.886-57.065,65.792-85.621 c2.546-3.305,6.214-5.996,7.15-12.705c-16.609,0-32.784,0.04-48.958-0.013c-19.195-0.066-28.278-5.805-28.14-17.652 c0.132-11.768,9.175-17.329,28.397-17.348c25.159-0.026,50.324-0.06,75.476,0.026c9.637,0.033,19.604,0.105,25.304,9.789 c6.22,10.561,0.284,19.512-5.646,27.454c-21.26,28.497-43.015,56.624-64.559,84.902c-2.599,3.41-5.119,6.88-9.453,12.725 c23.424,0,44.123-0.053,64.816,0.026c8.674,0.026,16.662,1.873,19.941,11.267C237.892,379.329,231.368,390.752,217.858,391.083z M350.854,330.211c0,13.417-0.093,26.841,0.039,40.265c0.073,7.599-2.599,13.647-9.512,17.084 c-7.296,3.642-14.71,3.028-20.304-2.968c-3.997-4.281-6.214-3.213-10.488-0.422c-17.955,11.728-39.908,9.96-56.597-3.866 c-29.928-24.789-30.026-74.803-0.211-99.776c16.194-13.562,39.592-15.462,56.709-4.143c3.951,2.619,6.201,4.815,10.396-0.053 c5.39-6.267,13.055-6.761,20.271-3.357c7.454,3.509,9.935,10.165,9.776,18.265C350.67,304.222,350.86,317.217,350.854,330.211z M395.617,369.579c-0.118,12.837-6.398,19.783-17.196,19.908c-10.779,0.132-17.593-6.966-17.646-19.512 c-0.179-43.352-0.185-86.696,0.007-130.041c0.059-12.256,7.302-19.921,17.896-19.222c11.425,0.752,16.992,7.448,16.992,18.833 c0,22.104,0,44.216,0,66.327C395.677,327.105,395.828,348.345,395.617,369.579z M463.981,391.868 c-34.399-0.336-59.037-26.444-58.786-62.289c0.251-35.66,25.304-60.713,60.383-60.396c34.631,0.304,59.374,26.306,58.998,61.986 C524.207,366.492,498.534,392.205,463.981,391.868z">
+                                    </path>
+                                </svg>
+                            </span> Zalo: 19006750
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Navigation-bar -->
+    <div class="navigation-bar">
+        <div class="container">
+            <ul class="card-item">
+                <li>
+                    <a href="../Home_page/index.html">Trang chủ</a>
+                </li>
+                <li>
+                    <strong>
+                        Liên hệ
+                    </strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Contact -->
+    <div class="container">
+        <div class="card-item contact2">
+            <div class="box-title">
+                <h3 class="title-header">Hỗ trợ dịch vụ Tour</h3>
+                <div class="card-item">
+                    <!-- Address -->
+                    <div class="card-description3">
+                        <div class="contact-box2">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                                </svg>
+                            </div>
+                            <p class="content-box2">
+                                70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Phone -->
+                    <div class="card-description3">
+                        <div class="contact-box2">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                </svg>
+                            </div>
+                            <a class="content-box2" href="#" title="19006750">1900 6750</a>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div class="card-description3">
+                        <div class="contact-box2">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-envelope" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                                </svg>
+                            </div>
+                            <a class="content-box2" href="#" title="support@sapo.vn">support@sapo.vn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact-left -->
+            <div class="contact-left">
+                <div class="leave-your-message">
+                    <p>
+                        Evo Tour được các du khách trong nước và quốc tế biết đến là
+                        một Công ty tin cậy về chất lượng cũng như dịch vụ hoàn hảo.
+                        Chúng tôi chuyên tổ chức các tour du lịch quốc tế, nội địa,
+                        cũng như tổ chức cho các cơ quan đoàn thể đi tham quan, học
+                        tập, nghiên cứu, khảo sát thị trường, hội nghị, hội thảo trong
+                        nước và ngoài nước.
+                    </p>
+                </div>
+            </div>
+            <!-- Contact-right -->
+            <div class="contact-right">
+                <form class="card-item" action="#">
+                    <div class="card-description3 ">
+                        <label for="Name">
+                            Họ và tên <span>*</span>
+                        </label>
+                        <input type="text" name="Name" id="Name" placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="card-description3">
+                        <label for="Email">
+                            Email <span>*</span>
+                        </label>
+                        <input type="email" name="Email" id="Email" placeholder="Nhập địa chỉ Email">
+                    </div>
+                    <div class="card-description3">
+                        <label for="Phone">
+                            Số điện thoại <span>*</span>
+                        </label>
+                        <input type="tel" name="Phone" id="Phone" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="contact-content2">
+                        <label for="Content">
+                            Nội dung <span>*</span>
+                        </label>
+                        <textarea name="Content" id="Content" placeholder="Nội dung liên hệ"></textarea>
+                    </div>
+                    <div class="btn">
+                        <button class="btn-contact">Gửi tin nhắn</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Map -->
+    <div class="container map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7668.273306587919!2d108.222746!3d16.058397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219cc2af84105%3A0x9a924a8e9c5e8751!2zMzAgxJAuIDIgVGjDoW5nIDksIELDrG5oIEhpw6puLCBI4bqjaSBDaMOidSwgxJDDoCBO4bq1bmcgNTUwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2sus!4v1634594855205!5m2!1svi!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- footer-register -->
+        <div class="footer-register">
+            <div class="container">
+                <div class="card-item">
+                    <!-- social-network -->
+                    <div class="social-network">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path
+                                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-twitter" viewBox="0 0 16 16">
+                                        <path
+                                            d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- subscribe-content -->
+                    <div class="subscribe-content">
+                        <h2>Đăng ký nhận tin</h2>
+                        <p>Các deal du lịch giảm giá đến 60% sẽ được gửi đến bạn</p>
+                    </div>
+                    <!-- subscribe-form -->
+                    <div class="subscribe-form">
+                        <form action="#">
+                            <input type="text" name="Eamil" id="Email" placeholder="Địa chỉ Email">
+                            <button>Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer-main -->
+        <div class="footer-main">
+            <div class="container">
+                <div class="card-item">
+                    <!---->
+                    <div class="footer-main-left">
+                        <a class="footer-logo" href="#">
+                            <img src="../image/fot_logo.webp" alt="">
+                        </a>
+                        <ul class="footer-contact">
+                            <li>
+                                <span>Địa chỉ:</span>
+                                70 Lu Gia, Ward 15, District 11, Ho Chi Minh City
+                            </li>
+                            <li>
+                                <span>Email:</span>
+                                <a href="#" title="support@sapo.vn">support@sapo.vn</a>
+                            </li>
+                            <li>
+                                <span>Điện thoại:</span>
+                                <a href="#" title="1900 6750">1900 6750</a>
+                            </li>
+                            <li>
+                                <span>Zalo:</span>
+                                <a href="#" title="1900 6750">1900 6750</a>
+                            </li>
+                            <li>
+                                Giấy phép kinh doanh số 0000000000 do sở KH&ĐT TP Đà Nẵng cấp ngày 00/00/0000
+                            </li>
+                        </ul>
+                        <div class="footer-payment">
+                            <img src="../image/payment_1.svg" alt="Tour Quốc tế">
+                            <img src="../image/payment_2.svg" alt="Tour Quốc tế">
+                            <img src="../image/payment_4.svg" alt="Tour Quốc tế">
+                            <img src="../image/payment_5.svg" alt="Tour Quốc tế">
+                        </div>
+                    </div>
+                    <!---->
+                    <div class="footer-main-right">
+                        <ul id="list-footer" class="card-item"></ul>
+                        <div class="copy-right">
+                            <span>
+                                © Bản quyền thuộc về
+                                <b>
+                                    Evo Themes
+                                </b>
+                                | Cung cấp bởi
+                                <a href="#">
+                                    Sapo
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="../index.js"></script>
+<script src="index.js"></script>
+
+</html>

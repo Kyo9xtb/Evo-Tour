@@ -1,0 +1,201 @@
+.content{
+    margin: 30px 0 20px;
+}
+.content .container{
+    padding: 0 10px;
+    justify-content: center;
+}
+.card-description{
+    width: 70%;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 10px rgb(204 204 204 / 30%);
+    flex-wrap: wrap;
+}
+.bg-account{
+    background-image: url(image/account-banner.webp);
+    padding: 370px 20px 30px;
+    background-repeat: no-repeat;
+    background-color: #f4f5f6;
+}
+.bg-account h3{
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 22px;
+    color: #303846;
+}
+.sub-account p{
+    margin-bottom: 7px;
+    position: relative;
+    padding-left: 22px;
+    font-size: 13px;
+    line-height: 1.3;
+}
+.sub-account p::after{
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-image: url(//bizweb.dktcdn.net/100/372/532/themes/744930/assets/account_policy_icon.svg?1629430857692);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    left: 0;
+    position: absolute;
+}
+.header-login{
+    display: flex;
+    height: 50px;
+    border-bottom: 1px solid #eee;
+}
+.header-login li{
+    flex: 1 1;
+    text-align: center;
+    border-right: 1px solid #eee;
+    position: relative;
+}
+.header-login a{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 22px;
+    color: #999;
+}
+.active-btn::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 30px;
+    right: 30px;
+    bottom: -1px;
+    background-color: #1ba0e2;
+}
+.active-btn a{
+    font-weight: 600;
+    color: #303846;
+}
+.form-account{
+    padding: 20px;
+}
+.form-account label, .form-account input, .form-account button{
+    display: block;
+    width: 100%;
+}
+.form-account label{
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.form-account input{
+    background-color: #fff;
+    height: 40px;
+    padding: 0 15px;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+}
+.form-account button{
+    height: 40px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    font-size: 13px;
+    border-radius: 4px;
+    margin-top: 15px;
+    text-align: center;
+    background-color: #1ba0e2;
+    border: 1px solid #1ba0e2;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.form-account button:hover{
+    opacity: 0.7;
+}
+.form-account span{
+    font-size: 13px;
+    color: red;
+}
+.forgot-account{
+    text-align: right;
+    color: #1ba0e2;
+    font-size: 13px;
+    margin: 15px 0;
+}
+.forgot-account a:hover{
+    color: #1ba0e4;
+}
+.note{
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 1.1;
+}
+.line-break{
+    margin: 0px auto 20px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.line-break::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #eee;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+.line-break span{
+    display: inline-block;
+    font-size: 13px;
+    color: #999;
+    padding: 1px 10px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+.social-login{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.social-login a{
+    min-width: 140px;
+    position: relative;
+}
+.social-login a:hover::after{
+    content: "";
+    background-color: rgb(204 204 204 / 30%);
+    position: absolute;
+    width: 130px;
+    height: 100%;
+    top: 0;
+    left: 5px;
+}
+.social-login img{
+    width: 130px;
+    height: 40px;
+}
+@media only screen and (max-width: 768px) {
+    .card-description{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .card-description{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+}
